@@ -59,7 +59,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AutoTest\Framework.csproj">
+    <ProjectReference Include="..\Framework\Framework.csproj">
       <Project>{fc596c86-6236-4660-99d4-a99400925586}</Project>
       <Name>Framework</Name>
     </ProjectReference>
