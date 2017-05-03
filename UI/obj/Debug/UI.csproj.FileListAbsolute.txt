@@ -1,0 +1,12 @@
+C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\bin\Debug\UI.dll
+C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\bin\Debug\UI.pdb
+C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\obj\Debug\UI.dll
+C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\obj\Debug\UI.pdb
+C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\bin\Debug\HtmlElements.dll
+C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\bin\Debug\WebDriver.dll
+C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\bin\Debug\WebDriver.Support.dll
+C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\bin\Debug\WebDriver.xml
+C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\bin\Debug\WebDriver.Support.xml
+C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\bin\Debug\Framework.dll
+C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\bin\Debug\Framework.pdb
