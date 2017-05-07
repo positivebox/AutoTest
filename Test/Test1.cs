@@ -17,12 +17,17 @@ namespace Test
         [Test]
         public void Test()
         {
-            PageManager.HomePage.MainMenu.NavigateViaMenu(MainMenuOptions.Company, 1);
+            PageManager.HomePage.MainMenu.NavigateViaMenu(MainMenuOptions.Vacancies, 1);
+            PageManager.OpenVacanciesPage.SelectDirection("Software Development");
+            PageManager.OpenVacanciesPage.SelectTechnology("C#");
+            PageManager.OpenVacanciesPage.SelectCountry("Україна");
+            PageManager.OpenVacanciesPage.SelectCity("Дніпро");
         }
 
         [TearDown]
         public void TestTearDown()
         {
+            DriverManager.Quit();
         }
     }
 }

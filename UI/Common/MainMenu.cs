@@ -6,28 +6,28 @@ namespace UI.Common
 {
     public class MainMenu
     {
-        private const string SubmenuOptionXPathFormat = @"//li[contains(@class, 'open')]/ul/li[@class=""menu-item""][{0}]";
+        private const string SubmenuOptionXPathFormat = "//li[contains(@class, 'open')]/ul/li[@class='menu-item'][{0}]";
 
         private Element CompanyDropdown = ElementFactory
-            .InitializeElement(@"//*[@class=""dropdown ss_menu_company_b""]/a");
+            .InitializeElement("//*[@class='dropdown ss_menu_company_b']/a");
 
         private Element CareerDropdown = ElementFactory
-            .InitializeElement(@"//*[@class=""dropdown ss_menu_career_b""]/a");
+            .InitializeElement("//*[@class='dropdown ss_menu_career_b']/a");
 
         private Element PlusesDropdown = ElementFactory
-            .InitializeElement(@"//*[@class=""dropdown ss_menu_pluses_b""]/a");
+            .InitializeElement("//*[@class='dropdown ss_menu_pluses_b']/a");
 
         private Element VacanciesDropdown = ElementFactory
-            .InitializeElement(@"//*[@class=""dropdown ss_menu_vacansys_b""]/a");
+            .InitializeElement("//*[@class='dropdown ss_menu_vacansys_b']/a");
 
         private Element UniverDropdown = ElementFactory
-            .InitializeElement(@"//*[@class=""dropdown ss_menu_univer_b""]/a");
+            .InitializeElement("//*[@class='dropdown ss_menu_univer_b']/a");
 
         private Element PressDropdown = ElementFactory
-            .InitializeElement(@"//*[@class=""dropdown ss_menu_press_b""]/a");
+            .InitializeElement("//*[@class='dropdown ss_menu_press_b']/a");
 
         private Element ContactsButton = ElementFactory
-            .InitializeElement(@"//*[@class=""dropdown ss_menu_contacts_b""]/a");
+            .InitializeElement("//*[@class='dropdown ss_menu_contacts_b']/a");
 
         private Element SubmenuOption;
 

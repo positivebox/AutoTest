@@ -1,27 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\Natalka1992\Desktop\Training\AutoTest\Test\bin\Debug\Test.dll" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-04-25" time="02:00:09">
+<test-results name="C:\Users\Natalka1992\Desktop\Training\AutoTest\Test\bin\Debug\Test.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-05-07" time="23:56:04">
   <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.8745" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\Natalka1992\Desktop\Training\AutoTest\Test\bin\Debug" machine-name="NATALKA" user="Natalka1992" user-domain="NATALKA" />
   <culture-info current-culture="uk-UA" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Users\Natalka1992\Desktop\Training\AutoTest\Test\bin\Debug\Test.dll" executed="True" result="Failure" success="False" time="15.535" asserts="0">
+  <test-suite type="Assembly" name="C:\Users\Natalka1992\Desktop\Training\AutoTest\Test\bin\Debug\Test.dll" executed="True" result="Success" success="True" time="23.255" asserts="0">
     <results>
-      <test-suite type="Namespace" name="Test" executed="True" result="Failure" success="False" time="15.520" asserts="0">
+      <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="23.236" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="Test1" executed="True" result="Failure" success="False" time="15.518" asserts="0">
+          <test-suite type="TestFixture" name="Test1" executed="True" result="Success" success="True" time="23.233" asserts="0">
             <results>
-              <test-case name="Test.Test1.Test" executed="True" result="Error" success="False" time="15.504" asserts="0">
-                <failure>
-                  <message><![CDATA[SetUp : System.TypeInitializationException : The type initializer for 'Framework.Driver' threw an exception.
-  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file C:\Users\Natalka1992\Desktop\Training\AutoTest\driver\IEDriverServer.exe does not exist. The driver can be downloaded at http://code.google.com/p/selenium/downloads/list]]></message>
-                  <stack-trace><![CDATA[at Test.Test1.TestSetUp() in C:\Users\Natalka1992\Desktop\Training\AutoTest\Test\Test1.cs:line 13
---DriverServiceNotFoundException
-at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
-at OpenQA.Selenium.IE.InternetExplorerDriverService..ctor(String executable, Int32 port)
-at OpenQA.Selenium.IE.InternetExplorerDriver..ctor(String internetExplorerDriverServerDirectory)
-at Framework.Driver..cctor() in C:\Users\Natalka1992\Desktop\Training\AutoTest\AutoTest\Driver.cs:line 9
-]]></stack-trace>
-                </failure>
-              </test-case>
+              <test-case name="Test.Test1.Test" executed="True" result="Success" success="True" time="23.211" asserts="0" />
             </results>
           </test-suite>
         </results>
