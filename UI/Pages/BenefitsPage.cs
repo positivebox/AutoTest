@@ -9,18 +9,18 @@ namespace UI.Pages
         private const string CityOptionXpathFormat = @"//select[@id=""tax-city""]/option[contains(text(),'{0}')]";
         private const string BenefitTitleXpathFormat = @"//*[@class=""media-benefit_title"" and contains(text(),'{0}')]";
 
-        private Element CountryDropdown { get { return CountryDropdown
-                    .ElementFactory(@"//*[@id=""s2id_tax-country""]/a"); } }
-        private Element CityDropdown { get { return CityDropdown
-                    .ElementFactory(@"//*[@id=""s2id_tax-city""]/a"); } }
+        private Element CountryDropdown = ElementFactory
+            .InitializeElement(@"//*[@id=""s2id_tax-country""]/a");
+        private Element CityDropdown = ElementFactory
+            .InitializeElement(@"//*[@id=""s2id_tax-city""]/a");
 
-        private Element CountryOption { get; }
-        private Element CityOption { get; }
-        private Element BenefitTitle { get; }
+        private Element CountryOption;
+        private Element CityOption;
+        private Element BenefitTitle;
 
 
 
-        public BenefitsPage()
+        internal BenefitsPage()
         {
             Url = "https://softserve.ua/ua/contacts/";
         }
@@ -28,20 +28,23 @@ namespace UI.Pages
         public void SelectCountry(string country)
         {
             CountryDropdown.Click();
-            CountryOption.ElementFactory(String.Format(CountryOptionXpathFormat, country));
+            CountryOption = ElementFactory
+            .InitializeElement(String.Format(CountryOptionXpathFormat, country));
             CountryOption.Click();
         }
 
         public void SelectCity(string city)
         {
             CityDropdown.Click();
-            CityOption.ElementFactory(String.Format(CityOptionXpathFormat, city));
+            CityOption = ElementFactory
+            .InitializeElement(String.Format(CityOptionXpathFormat, city));
             CityOption.Click();
         }
 
         public void SelectBenefit(string title)
         {
-            BenefitTitle.ElementFactory(String.Format(BenefitTitleXpathFormat, title));
+            BenefitTitle = ElementFactory
+            .InitializeElement(String.Format(BenefitTitleXpathFormat, title));
             BenefitTitle.Click();
         }
     }

@@ -4,17 +4,12 @@ namespace Framework
 {
     public class Element
     {
-        private IWebElement _element => DriverManager.FindElement(_search);
-        internal By _search;
+        private IWebElement _element => DriverManager.FindElement(Search);
+
+        internal Search Search;
 
         internal Element()
         {
-        }
-
-        public Element ElementFactory(string elementXPath)
-        {
-            _search = By.XPath(elementXPath);
-            return this;
         }
 
         public void SendKeys(string text)

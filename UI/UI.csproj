@@ -54,8 +54,8 @@
     <Compile Include="Pages\ContactsPage.cs" />
     <Compile Include="Enums\MainMenuOptions.cs" />
     <Compile Include="Pages\HomePage.cs" />
-    <Compile Include="MainMenu.cs" />
-    <Compile Include="Pages\Pages.cs" />
+    <Compile Include="Common\MainMenu.cs" />
+    <Compile Include="PageManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

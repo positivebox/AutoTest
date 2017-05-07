@@ -11,3 +11,16 @@ C:\Users\Natalka1992\Desktop\Training\AutoTest\AutoTest\bin\Debug\Framework.dll
 C:\Users\Natalka1992\Desktop\Training\AutoTest\AutoTest\bin\Debug\Framework.pdb
 C:\Users\Natalka1992\Desktop\Training\AutoTest\AutoTest\obj\Debug\Framework.dll
 C:\Users\Natalka1992\Desktop\Training\AutoTest\AutoTest\obj\Debug\Framework.pdb
+C:\Users\Natalka1992\Desktop\Training\AutoTest\Framework\obj\Debug\Framework.csprojResolveAssemblyReference.cache
+C:\Users\Natalka1992\Desktop\Training\AutoTest\Framework\obj\Debug\Framework.dll
+C:\Users\Natalka1992\Desktop\Training\AutoTest\Framework\obj\Debug\Framework.pdb
+C:\Users\Natalka1992\Desktop\Training\AutoTest\Framework\bin\Debug\Framework.dll
+C:\Users\Natalka1992\Desktop\Training\AutoTest\Framework\bin\Debug\Framework.pdb
+C:\Users\Natalka1992\Desktop\Training\AutoTest\Framework\bin\Debug\HtmlElements.dll
+C:\Users\Natalka1992\Desktop\Training\AutoTest\Framework\bin\Debug\nunit.framework.dll
+C:\Users\Natalka1992\Desktop\Training\AutoTest\Framework\bin\Debug\nunit.tdnet.dll
+C:\Users\Natalka1992\Desktop\Training\AutoTest\Framework\bin\Debug\WebDriver.dll
+C:\Users\Natalka1992\Desktop\Training\AutoTest\Framework\bin\Debug\WebDriver.Support.dll
+C:\Users\Natalka1992\Desktop\Training\AutoTest\Framework\bin\Debug\nunit.framework.xml
+C:\Users\Natalka1992\Desktop\Training\AutoTest\Framework\bin\Debug\WebDriver.xml
+C:\Users\Natalka1992\Desktop\Training\AutoTest\Framework\bin\Debug\WebDriver.Support.xml

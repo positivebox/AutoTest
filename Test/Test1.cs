@@ -1,7 +1,7 @@
 ﻿using Framework;
 using NUnit.Framework;
+using UI;
 using UI.Enums;
-using UI.Pages;
 
 namespace Test
 {
@@ -10,14 +10,14 @@ namespace Test
         [SetUp]
         public void TestSetUp()
         {
-            DriverManager.SelectDriver(Driver.ChromeDriver);
-            Pages.HomePage.OpenPage();
+            DriverManager.SelectDriver(Browser.Chrome);
+            PageManager.HomePage.OpenPage();
         }
 
         [Test]
         public void Test()
         {
-            Pages.HomePage.MainMenu.NavigateViaMenu(MainMenuOptions.Company, 1);
+            PageManager.HomePage.MainMenu.NavigateViaMenu(MainMenuOptions.Company, 1);
         }
 
         [TearDown]

@@ -4,16 +4,16 @@ namespace UI.Pages
 {
     public class ContactsPage : BasePage
     {
-        private Element NameField { get { return NameField
-                    .ElementFactory(@"//*[@name=""name""]"); } }
-        private Element EmailField { get { return EmailField
-                    .ElementFactory(@"//*[@name=""email""]"); } }
-        private Element MessageField { get { return MessageField
-                    .ElementFactory(@"//*[@name=""message""]"); } }
-        private Element SubmitButton { get { return SubmitButton
-                    .ElementFactory(@"//*[@class=""btn-submit ss_contact_feedback_submit""]"); } }
+        private Element NameField = ElementFactory
+            .InitializeElement(@"//*[@name=""name""]");
+        private Element EmailField = ElementFactory
+            .InitializeElement(@"//*[@name=""email""]");
+        private Element MessageField = ElementFactory
+            .InitializeElement(@"//*[@name=""message""]");
+        private Element SubmitButton = ElementFactory
+            .InitializeElement(@"//*[@class=""btn-submit ss_contact_feedback_submit""]");
 
-        public ContactsPage()
+        internal ContactsPage()
         {
             Url = "https://softserve.ua/ua/contacts/";
         }

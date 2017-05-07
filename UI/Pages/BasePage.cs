@@ -1,5 +1,6 @@
 ﻿using Framework;
 using System;
+using UI.Common;
 
 namespace UI.Pages
 {
@@ -7,7 +8,7 @@ namespace UI.Pages
     {
         public MainMenu MainMenu = new MainMenu();
 
-        public String Url { get; protected set; }
+        public string Url { get; protected set; }
 
         public void OpenPage()
         {

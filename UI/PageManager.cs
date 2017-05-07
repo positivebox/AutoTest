@@ -1,6 +1,8 @@
-﻿namespace UI.Pages
+﻿using UI.Pages;
+
+namespace UI
 {
-    public static class Pages
+    public static class PageManager
     {
         public static HomePage HomePage => new HomePage();
         public static ContactsPage ContactsPage => new ContactsPage();

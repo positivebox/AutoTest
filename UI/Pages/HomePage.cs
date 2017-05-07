@@ -2,7 +2,7 @@
 {
     public class HomePage : BasePage
     {
-        public HomePage()
+        internal HomePage()
         {
             Url = "https://softserve.ua/ua/";
         }
