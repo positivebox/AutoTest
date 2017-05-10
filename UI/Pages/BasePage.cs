@@ -1,4 +1,4 @@
-﻿using Framework;
+﻿using Framework.Driver;
 using UI.Common;
 
 namespace UI.Pages
@@ -11,7 +11,7 @@ namespace UI.Pages
 
         public void OpenPage()
         {
-            DriverManager.OpenUrl(Url);
+            DriverManager.Driver.OpenUrl(Url);
         }
     }
 }

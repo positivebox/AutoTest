@@ -1,15 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\Natalka1992\Desktop\Training\AutoTest\Test\bin\Debug\Test.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-05-07" time="23:56:04">
+<test-results name="C:\Users\Natalka1992\Desktop\Training\AutoTest\Test\bin\Debug\Test.dll" total="1" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-05-11" time="02:29:12">
   <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.8745" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\Natalka1992\Desktop\Training\AutoTest\Test\bin\Debug" machine-name="NATALKA" user="Natalka1992" user-domain="NATALKA" />
   <culture-info current-culture="uk-UA" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Users\Natalka1992\Desktop\Training\AutoTest\Test\bin\Debug\Test.dll" executed="True" result="Success" success="True" time="23.255" asserts="0">
+  <test-suite type="Assembly" name="C:\Users\Natalka1992\Desktop\Training\AutoTest\Test\bin\Debug\Test.dll" executed="True" result="Failure" success="False" time="26.231" asserts="0">
     <results>
-      <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="23.236" asserts="0">
+      <test-suite type="Namespace" name="Test" executed="True" result="Failure" success="False" time="26.208" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="Test1" executed="True" result="Success" success="True" time="23.233" asserts="0">
+          <test-suite type="TestFixture" name="Test1" executed="True" result="Failure" success="False" time="26.201" asserts="0">
             <results>
-              <test-case name="Test.Test1.Test" executed="True" result="Success" success="True" time="23.211" asserts="0" />
+              <test-case name="Test.Test1.Test" executed="True" result="Failure" success="False" time="26.175" asserts="0">
+                <failure>
+                  <message><![CDATA[  Expected string length 30 but was 38. Strings differ at index 3.
+  Expected: ".NET, C#, Software Development"
+  But was:  ".NEeeeeeeeeT, C#, Software Development"
+  --------------^
+]]></message>
+                  <stack-trace><![CDATA[at Test.Test1.Test() in C:\Users\Natalka1992\Desktop\Training\AutoTest\Test\Test1.cs:line 35
+]]></stack-trace>
+                </failure>
+              </test-case>
             </results>
           </test-suite>
         </results>

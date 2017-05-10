@@ -1,7 +1,8 @@
-﻿using OpenQA.Selenium;
+﻿using System.Collections.Generic;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace Framework
+namespace Framework.Driver
 {
     public class Driver
     {
@@ -28,6 +29,22 @@ namespace Framework
         internal IWebElement FindElement(Search search)
         {
             return _driver.FindElement(search.By);
+        }
+
+        internal List<IWebElement> FindElements(Search search)
+        {
+            List<IWebElement> elements = new List<IWebElement>();
+            foreach (var element in _driver.FindElements(search.By))
+            {
+                elements.Add(element);
+            }
+
+            return elements;
+        }
+
+        public void Quit()
+        {
+            _driver.Quit();
         }
     }
 

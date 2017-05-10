@@ -1,4 +1,6 @@
-﻿using UI.Common;
+﻿using System.Collections.Generic;
+using Framework.Elements;
+using UI.Common;
 
 namespace UI.Pages.Vacancies
 {
@@ -8,6 +10,21 @@ namespace UI.Pages.Vacancies
         private Dropdown _technologyDropdown = new Dropdown("lang");
         private Dropdown _countryDropdown = new Dropdown("country");
         private Dropdown _cityDropdown = new Dropdown("city");
+        private const string VacancyCardsXPath = "//div[contains(@class, 'card-vacancy')]";
+
+        public List<VacancyCard> VacancyCards
+        {
+            get
+            {
+                var vacancyCards = new List<VacancyCard>();
+                for (int i = 1; i <= ElementFactory
+                    .InitializeElements(VacancyCardsXPath).Count; i++)
+                {
+                    vacancyCards.Add(new VacancyCard(i));
+                }
+                return vacancyCards;
+            }
+        }
 
         internal OpenVacanciesPage()
         {

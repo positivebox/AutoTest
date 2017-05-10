@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using Framework;
+using Framework.Driver;
 
 namespace Test
 {
@@ -13,7 +13,7 @@ namespace Test
         [TearDown]
         public void TestTearDown()
         {
-            DriverManager.Quit();
+            DriverManager.Driver.Quit();
         }
     }
 }

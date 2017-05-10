@@ -58,6 +58,7 @@
     <Compile Include="Common\MainMenu.cs" />
     <Compile Include="PageManager.cs" />
     <Compile Include="Pages\Vacancies\OpenVacanciesPage.cs" />
+    <Compile Include="Pages\Vacancies\VacancyCard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
