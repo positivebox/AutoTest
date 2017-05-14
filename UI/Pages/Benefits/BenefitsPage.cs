@@ -8,8 +8,8 @@ namespace UI.Pages.Benefits
     {
         private const string BenefitTitleXpathFormat = "//*[@class='media-benefit_title' and contains(text(),'{0}')]";
 
-        private Dropdown _countryDropdown = new Dropdown("country");
-        private Dropdown _cityDropdown = new Dropdown("city");
+        private PageDropdown _countryDropdown = new PageDropdown("country");
+        private PageDropdown _cityDropdown = new PageDropdown("city");
         private Element _benefitTitle;
 
         internal BenefitsPage()

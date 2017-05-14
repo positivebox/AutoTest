@@ -49,7 +49,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\Dropdown.cs" />
+    <Compile Include="Common\PageDropdown.cs" />
+    <Compile Include="Common\FormDropdown.cs" />
+    <Compile Include="Common\Selector.cs" />
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\Benefits\BenefitsPage.cs" />
     <Compile Include="Pages\ContactsPage.cs" />
@@ -57,8 +59,10 @@
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Common\MainMenu.cs" />
     <Compile Include="PageManager.cs" />
+    <Compile Include="Pages\Vacancies\ApplyCvSection.cs" />
     <Compile Include="Pages\Vacancies\OpenVacanciesPage.cs" />
-    <Compile Include="Pages\Vacancies\VacancyCard.cs" />
+    <Compile Include="Pages\Vacancies\VacancyCardSection.cs" />
+    <Compile Include="Pages\Vacancies\VacancyPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -66,6 +70,9 @@
       <Project>{fc596c86-6236-4660-99d4-a99400925586}</Project>
       <Name>Framework</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

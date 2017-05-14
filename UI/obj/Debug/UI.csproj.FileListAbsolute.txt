@@ -10,3 +10,6 @@ C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\bin\Debug\WebDriver.Support.xm
 C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
 C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\obj\Debug\UI.dll
 C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\obj\Debug\UI.pdb
+C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\bin\Debug\UI.dll.config
+C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\bin\Debug\log4net.dll
+C:\Users\Natalka1992\Desktop\Training\AutoTest\UI\bin\Debug\log4net.xml

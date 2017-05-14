@@ -3,7 +3,7 @@ using Framework.Elements;
 
 namespace UI.Pages.Vacancies
 {
-    public class VacancyCard
+    public class VacancyCardSection
     {
         private int _cardIndex;
         private const string VacancyCardTitleXPathFormat = "//div[{0}]/a/div/h3[@class = 'card-vacancy_title']";
@@ -11,7 +11,7 @@ namespace UI.Pages.Vacancies
         private const string VacancyCardCountryXPathFormat = "//div[{0}]/a/div/div/dl[2]/dd";
         private const string VacancyCardCityXPathFormat = "//div[{0}]/a/div/div/dl[3]/dd";
 
-        internal VacancyCard(int cardIndex)
+        internal VacancyCardSection(int cardIndex)
         {
             _cardIndex = cardIndex;
         }
@@ -38,6 +38,12 @@ namespace UI.Pages.Vacancies
         {
             return ElementFactory.InitializeElement(String.Format(VacancyCardCityXPathFormat, _cardIndex))
                 .GetInnerText();
+        }
+
+        public void Open()
+        {
+            ElementFactory.InitializeElement(String.Format(VacancyCardTitleXPathFormat, _cardIndex))
+                .Click();
         }
     }
 }
