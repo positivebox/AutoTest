@@ -1,6 +1,6 @@
 ﻿using System;
-using Framework.Elements;
 using Framework;
+using Framework.Elements;
 
 namespace UI.Common
 {
@@ -9,13 +9,11 @@ namespace UI.Common
         protected string _selectorXPathFormat;
         protected string _selectorOptionXPathFormat;
 
-        private Element _selector;
+        protected Element _selector;
         private Element _option;
 
-        internal Selector(string identifier)
+        internal Selector()
         {
-            _selector = ElementFactory
-                .InitializeElement(String.Format(_selectorXPathFormat, identifier));
         }
 
         public void SelectDropdownOption(string optionValue)

@@ -1,9 +1,9 @@
 ﻿using System;
+using Framework;
 using Framework.Driver;
 using NUnit.Framework;
 using UI;
 using UI.Enums;
-using Framework;
 
 namespace Test
 {
@@ -25,6 +25,8 @@ namespace Test
         public void Test()
         {
             try {
+                Logger.Info("Started test");
+
                 PageManager.HomePage.MainMenu.NavigateViaMenu(MainMenuOptions.Vacancies, 1);
                 PageManager.OpenVacanciesPage.DirectionDropdown.SelectDropdownOption(_testDirection);
                 PageManager.OpenVacanciesPage.TechnologyDropdown.SelectDropdownOption(_testTechnology);
@@ -46,14 +48,21 @@ namespace Test
 
                 PageManager.VacancyPage.OpenApplyCvSection();
                 PageManager.VacancyPage.ApplyCVSection.EmailField.SendKeys("someemail@@mailinator.com");
+                PageManager.VacancyPage.ApplyCVSection.ChooseFileButton.SendKeys(@"\Test\TestData\TestJpeg.jpg");
                 PageManager.VacancyPage.ApplyCVSection.WhereFromDropdown.SelectDropdownOption("Other");
                 PageManager.VacancyPage.ApplyCVSection.SubmitCv();
+                Assert.False(PageManager.VacancyPage.ApplyCVSection.VerifyFileExtentionIncorrectMessageAppeared());
+
+                PageManager.VacancyPage.ApplyCVSection.EmailField.SendKeys("someemail@mailinator.com");
+                PageManager.VacancyPage.ApplyCVSection.SubmitCv();
+                Assert.True(PageManager.VacancyPage.ApplyCVSection.VerifyFileExtentionIncorrectMessageAppeared());
 
                 Logger.Info("Test succesfully passed");
             }
             catch (Exception ex)
             {
                 Logger.Error(ex.Message);
+                ScreenshotMaker.TakeScreenshot();
             }
             }
 

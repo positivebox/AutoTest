@@ -1,5 +1,6 @@
 ﻿using Framework;
 using Framework.Elements;
+using System.Threading;
 
 namespace UI.Pages.Vacancies
 {
@@ -47,6 +48,7 @@ namespace UI.Pages.Vacancies
         {
             ElementFactory.InitializeElement(ApplyCvButtonXPath).Click();
             Logger.Info("Clicking Apply CV button");
+            Thread.Sleep(1000);
             ApplyCVSection = new ApplyCvSection();
         }
     }

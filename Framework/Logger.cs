@@ -1,17 +1,22 @@
-﻿namespace Framework
+﻿using log4net;
+using log4net.Config;
+
+namespace Framework
 {
     public static class Logger
     {
-        private static readonly log4net.ILog log =
-            log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly ILog log =
+            LogManager.GetLogger("LOGGER");
 
         public static void Info(string message)
         {
+            XmlConfigurator.Configure();
             log.Info(message);
         }
 
         public static void Error(string message)
         {
+            XmlConfigurator.Configure();
             log.Error(message);
         }
     }
