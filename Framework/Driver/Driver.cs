@@ -1,6 +1,10 @@
 ﻿using System.Collections.Generic;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using Framework.Elements;
+using System;
+using System.Drawing;
+using System.Drawing.Imaging;
 
 namespace Framework.Driver
 {
@@ -40,6 +44,21 @@ namespace Framework.Driver
             }
 
             return elements;
+        }
+
+        public void TakeScreenshot(Element focusedElement = null)
+        {
+            String fileName = "Failure" + DateTime.Now.ToString("yyyy-MM-dd-hhmm-ss");
+            Byte[] byteArray = ((ITakesScreenshot)_driver).GetScreenshot().AsByteArray;
+            Bitmap screenshot = new Bitmap(new System.IO.MemoryStream(byteArray));
+
+            if (focusedElement != null)
+            {
+                Rectangle croppedImage = new Rectangle(focusedElement.Location.X, focusedElement.Location.Y, focusedElement.Width, focusedElement.Height);
+                screenshot = screenshot.Clone(croppedImage, screenshot.PixelFormat);
+
+            }
+            screenshot.Save(fileName + ".png", ImageFormat.Png);
         }
 
         public void Quit()

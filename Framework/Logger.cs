@@ -6,7 +6,7 @@ namespace Framework
     public static class Logger
     {
         private static readonly ILog log =
-            LogManager.GetLogger("LOGGER");
+            LogManager.GetLogger(typeof(Logger));
 
         public static void Info(string message)
         {

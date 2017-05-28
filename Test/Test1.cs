@@ -61,8 +61,8 @@ namespace Test
             }
             catch (Exception ex)
             {
-                Logger.Error(ex.Message);
-                ScreenshotMaker.TakeScreenshot();
+                Logger.Error(ex.Message + ex.StackTrace);
+                DriverManager.Driver.TakeScreenshot();
             }
             }
 

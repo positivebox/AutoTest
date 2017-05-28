@@ -7,6 +7,7 @@ namespace UI.Pages.Vacancies
     public class VacancyPage: BasePage
     {
         private int _cardIndex;
+        private ApplyCvSection _applyCVSection = new ApplyCvSection();
 
         private const string VacancyPageTitleXPath = "//h2[@class = 'card-vacancy-prev_title']";
         private const string VacancyPageDirectionsXPath = "//div/div/dl[1]/dd";
@@ -14,7 +15,7 @@ namespace UI.Pages.Vacancies
         private const string VacancyPageCityXPath = "//div/div/dl[3]/dd";
         private const string ApplyCvButtonXPath = "//div[@class='button-vacancy']/a[1]";
 
-        public ApplyCvSection ApplyCVSection { get; private set; }
+        public ApplyCvSection ApplyCVSection { get { return _applyCVSection; }}
 
         internal VacancyPage()
         {
@@ -49,7 +50,6 @@ namespace UI.Pages.Vacancies
             ElementFactory.InitializeElement(ApplyCvButtonXPath).Click();
             Logger.Info("Clicking Apply CV button");
             Thread.Sleep(1000);
-            ApplyCVSection = new ApplyCvSection();
         }
     }
 }
